@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    transition: background 0.4s ease;
+}
+
+.app-container {
+    background: rgba(30, 30, 30, 0.85);
+    padding: 25px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+}
+
+.app-header h1 {
+    color: #ff9800;
+    font-size: 2.5rem;
+}
+
+.app-header p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: #444;
+    color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    background: #ff9800;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e68900;
+}
+
+.current-weather {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #333;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.current-weather img {
+    width: 80px;
+}
+
+.info h2 {
+    color: #ff9800;
+}
+
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.day {
+    background: #333;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.weekday {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.day img {
+    width: 50px;
+}
+
+.temp {
+    color: white;
+    font-weight: bold;
+}
+
+/* Weather backgrounds */
+body.clear {
+    background-image: url("https://images.pexels.com/photos/459451/pexels-photo-459451.jpeg");
+}
+
+body.clouds {
+    background-image: url("https://images.pexels.com/photos/414659/pexels-photo-414659.jpeg");
+}
+
+body.rain {
+    background-image: url("https://images.pexels.com/photos/110874/pexels-photo-110874.jpeg");
+}
+
+body.snow {
+    background-image: url("https://images.pexels.com/photos/688660/pexels-photo-688660.jpeg");
+}
+
+body.default {
+    background-image: url("https://images.pexels.com/photos/912110/pexels-photo-912110.jpeg");
+}
